@@ -2,10 +2,6 @@
 // Import Custom Less Files here
 @import "kosmic-variables.less";
 
-#ilTopBarNav {
-  margin-top:-38px;
-  margin-right: -30px;
-}
 
 #ilTopNav {
   margin: 0px 0 0 15px;
@@ -20,7 +16,11 @@
 }
 
 div.ilTopBar a {
- color: #34515e;
+ color: #233755;
+}
+
+#ilTopBar.ilTopBar {
+  height: 39px;
 }
 
 .ilFixedTopSpacer {
@@ -30,12 +30,18 @@ div.ilTopBar a {
 .ilMainHeader.ilTopFixed {
     top: 0px;
 }
+
+#ilTopBarNav {
+  margin-top:-35px;
+  margin-right: -30px;
+}
+
 #ilTopBarNav > li > a {
     background-color: transparent;
 }
 
 #ilTopNav.navbar {
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 div.il_HeaderInner {
@@ -56,4 +62,38 @@ div.il_HeaderInner {
 .ilContainerWidth {
      max-width: none;
 }
+@media screen and (max-width: 767px) {
+#ilTopBarNav {
+  margin-top: 0px;
+  margin-right: -20px;
+}
 
+#ilTopNav {
+  display: inline-block;
+}
+
+#ilTopNav.navbar-default {
+   background-color: transparent;
+   margin-left: -25px; 
+  position: fixed;
+}
+
+#ilTopNav .navbar-nav {
+  margin-left: -5px;
+  margin-top: 34px;
+}
+
+#ilTopNav .navbar-nav > li > a {
+  margin: 0 0 0 0;
+  background-color: gray;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+#ilTopNav button.navbar-toggle {
+  left: 0px;
+}
+
+}
